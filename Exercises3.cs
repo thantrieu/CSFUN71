@@ -796,7 +796,7 @@ namespace ExercisesLesson71
             var birthDate = Console.ReadLine();
             if (!controller.IsBirthdateValid(birthDate))
             {
-                Console.WriteLine("==> Họ và tên không hợp lệ. Ngày sinh hợp lệ dạng 01/01/2001.");
+                Console.WriteLine("==> Ngày sinh không hợp lệ. Ngày sinh hợp lệ dạng 01/01/2001.");
                 return null;
             }
             var dob = DateTime.ParseExact(birthDate, "dd/MM/yyyy", null);
